@@ -1,0 +1,7 @@
+//PRODUCTION
+### Get all contacts
+GET https://cse341-node-ofaz.onrender.com/contacts
+
+### Get contact by id
+GET https://cse341-node-ofaz.onrender.com/681e9bd14b5d423dc15aa303
+
