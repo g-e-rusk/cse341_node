@@ -10,5 +10,5 @@ GET http://localhost:3000/contacts/681e9cfc4b5d423dc15aa30b
 GET https://cse341-node-ofaz.onrender.com/contacts
 
 ### Get contact by id
-GET https://cse341-node-ofaz.onrender.com/681e9bd14b5d423dc15aa303
+GET https://cse341-node-ofaz.onrender.com/contacts/681e9bd14b5d423dc15aa303
 
