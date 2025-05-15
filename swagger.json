@@ -8,11 +8,15 @@
   "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
       "get": {
+        "tags": [
+          "Hello World"
+        ],
         "description": "",
         "responses": {
           "200": {
@@ -21,8 +25,12 @@
         }
       }
     },
+    
     "/contacts/": {
       "get": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -34,6 +42,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -73,6 +84,9 @@
     },
     "/contacts/{id}": {
       "get": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -92,6 +106,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -135,6 +152,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -147,9 +167,6 @@
         "responses": {
           "204": {
             "description": "No Content"
-          },
-          "404": {
-            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"

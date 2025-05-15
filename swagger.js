@@ -5,8 +5,8 @@ const doc = {
         title: 'API - Geri Rusk, Project 1 - CSE 341',
         description: 'Contacts API',
     },
-    host: 'localhost:3000',
-    schemes: ['http'],
+    host: 'cse341-node-ofaz.onrender.com',
+    schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
