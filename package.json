@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.[js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "swagger": "node ./swagger.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +24,27 @@
   "homepage": "https://github.com/g-e-rusk/cse341_node#readme",
   "description": "",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongodb": "^6.16.0",
-    "mongoose": "^8.14.2"
+    "mongoose": "^8.14.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "globals": "^16.1.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "swagger-autogen": "^2.23.7"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-undef": "warn"
+    }
   }
 }
